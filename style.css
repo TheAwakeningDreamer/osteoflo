@@ -196,7 +196,7 @@ button:focus {
   color: #fff;
   width: 70%;
   text-align: center;
-  margin: auto;
+  margin: 0 auto 20px;
   padding: 20px 30px;
   border-radius: 15px;
 }
