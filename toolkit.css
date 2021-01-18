@@ -1,0 +1,18 @@
+:root {
+  --dark-blue: rgb(8, 8, 102, 0.9);
+  --godlen-color: rgb(236, 179, 33);
+  --dark-purple: #8a2be2;
+  --light-purple: #6565da;
+  --background: rgba(233, 209, 255, 0.61);
+}
+
+#button {
+  cursor: pointer;
+  margin: auto;
+  width: 10rem;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 14px;
+}

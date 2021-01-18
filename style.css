@@ -1,5 +1,7 @@
+@import 'toolkit.css';
+
 body {
-  background: rgba(233, 209, 255, 0.61);
+  background: var(--background);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,8 +15,26 @@ a {
   transition: color 500ms ease;
 }
 
+a.current {
+  color: var(--godlen-color);
+}
+
+a.current:before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  z-index: 2;
+  transition: width 300ms linear;
+}
+
 a:hover {
-  color: aquamarine;
+  color: var(--godlen-color);
 }
 button {
   transition: all 250ms ease;
@@ -31,13 +51,15 @@ button:focus {
 }
 
 #pr-nav {
-  height: 30vh;
-  background: #6565da;
   display: flex;
+  height: 30vh;
+  background: var(--dark-blue);
+  border-bottom: var(--godlen-color) 5px solid;
 }
+
 #pr-nav h3 {
   margin: auto;
-  color: #fff;
+  color: var(--godlen-color);
   font-size: 2rem;
 }
 
@@ -47,7 +69,7 @@ button:focus {
 }
 
 #nav-bar {
-  background: rgb(8, 8, 102);
+  background: var(--dark-blue);
 }
 
 #nav-bar ul {
@@ -93,29 +115,82 @@ button:focus {
 .container {
   margin: 20px;
 }
-.container header h1 {
+
+.container header #flo {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  margin-bottom: 30px;
   text-align: center;
 }
+
+.container header #flo #description {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container header #flo h1 {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  width: 80%;
+  color: var(--dark-blue);
+  border-bottom: var(--godlen-color) 5px solid;
+}
+
+.container header #flo h3 {
+  color: var(--dark-blue);
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.container header #flo h3:after {
+  content: '';
+  display: block;
+  width: 250px;
+  height: 5px;
+  background-color: var(--godlen-color);
+  margin: 20px auto 0;
+}
+
+.container header #flo p {
+  margin: 0px auto 30px;
+  font-size: 18px;
+  line-height: 1.4rem;
+}
+
+.container header #flo img {
+  border-radius: 15px;
+}
+
+.container header #flo button {
+  border: 3px solid var(--dark-blue);
+  transition: all 250ms ease-in;
+}
+.container header #flo button#button:hover {
+  border-color: var(--godlen-color);
+}
+
 .container header h2 {
   width: 300px;
   margin: 0 auto 20px;
   border-bottom: transparent 5px solid;
-  padding: 20px 0;
+  padding: 10px 0;
   transition: all 300ms ease-in;
 }
 
-.container header h2:hover {
+.container header #intro:hover h2 {
   width: 500px;
-  border-bottom: white 5px solid;
+  border-bottom: var(--godlen-color) 5px solid;
   transform: translateY(10px);
-}
-
-.container header h2:hover {
   cursor: pointer;
+  color: var(--godlen-color);
 }
 
 .container header #intro {
-  background-color: rgb(150, 145, 219);
+  background-color: rgba(8, 8, 102, 0.9);
   font-size: 18px;
   letter-spacing: 0.1rem;
   color: #fff;
@@ -164,23 +239,35 @@ button:focus {
 .osteo div {
   display: flex;
   flex-direction: column;
-  background-color: rgb(150, 145, 219);
+  background: var(--dark-blue);
   border-radius: 15px;
+  padding-top: 25px;
   padding-bottom: 25px;
   font-size: 18px;
   color: #fff;
 }
 
+.osteo div:first-child,
+.osteo div:last-child {
+  background-color: var(--godlen-color);
+  color: var(--dark-blue);
+}
 .osteo a {
   color: white;
 }
 
 .osteo a h2 {
   width: 70%;
+  color: rgba(8, 8, 102, 0.9);
   margin: 14px auto;
   border-bottom: transparent 3px solid;
   padding-bottom: 10px;
   transition: border-bottom 250ms linear;
+}
+
+.osteo div:nth-child(2) a h2,
+.osteo div:nth-child(2) p {
+  color: var(--godlen-color);
 }
 
 .osteo a:hover h2 {
@@ -211,7 +298,47 @@ button:focus {
 }
 
 #cbd {
+  position: relative;
   text-align: center;
+}
+
+#cbd .bubble img {
+  width: 200px;
+  border: 5px solid var(--light-purple);
+  border-radius: 50%;
+}
+
+#cbd .bubble:first-child {
+  position: absolute;
+  left: 250px;
+  top: 50px;
+}
+
+#cbd .bubble:nth-child(2) {
+  position: absolute;
+  left: 150px;
+  top: 400px;
+}
+
+#cbd .bubble:nth-child(3) {
+  position: absolute;
+  right: 250px;
+  top: 50px;
+}
+
+#cbd .bubble:nth-child(4) {
+  position: absolute;
+  right: 150px;
+  top: 400px;
+}
+
+#cbd .bubble {
+  transition: transform 250ms ease;
+}
+
+#cbd .bubble:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 #cbd:before {
@@ -219,7 +346,7 @@ button:focus {
   width: 80%;
   height: 5px;
   display: block;
-  background-color: rgb(8, 8, 102);
+  background-color: var(--dark-blue);
   margin: 20px auto 30px;
 }
 
@@ -229,7 +356,8 @@ button:focus {
   border-radius: 50%;
   margin: 24px auto 50px;
   padding: 30px;
-  background-color: #6565da;
+  background-color: var(--godlen-color);
+
   color: #fff;
 }
 
@@ -241,7 +369,7 @@ button:focus {
   padding: 24px;
   padding-top: 50px;
   margin-top: -43px;
-  background-color: blueviolet;
+  background-color: #8a2be2;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
 }
@@ -252,36 +380,116 @@ button:focus {
   text-align: center;
   margin-top: 100px;
   padding: 16px;
-  border: 3px solid #6565da;
+  border: 3px solid var(--light-purple);
   border-radius: 15px;
 }
 
 #cbd .product:first-child {
-  border-right: 3px solid #6565da;
+  border-right: 3px solid var(--light-purple);
 }
 
 #cbd .product:last-child {
-  border-left: 3px solid #6565da;
+  border-left: 3px solid var(--light-purple);
 }
 
+#cbd #products a {
+  color: var(--dark-blue);
+}
+
+#cbd #products a:hover {
+  color: var(--light-purple);
+}
+
+#cbd #products h3 {
+  font-size: 24px;
+  width: 50%;
+  margin: 0 auto 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: var(--dark-blue) 3px solid;
+}
 #cbd #products img {
+  border: var(--dark-blue) solid 5px;
   border-radius: 50%;
+  transition: all 250ms ease;
+}
+
+#cbd #products img:hover {
+  cursor: pointer;
+  border-color: var(--godlen-color);
+  transform: scale(0.98);
 }
 
 #cbd #products button {
   cursor: pointer;
+  font-size: 24px;
   margin: auto;
   width: 10rem;
   padding: 15px 10px;
-  border: none;
+  border: 3px solid var(--dark-blue);
   border-radius: 20px;
   font-weight: 700;
   font-size: 14px;
+  transition: all 250ms ease-in;
+}
+
+#cbd #products button:hover {
+  border-color: var(--godlen-color);
+}
+
+/* CONTACT PAGE */
+#contact-form {
+  text-align: center;
+  border: 3px solid var(--dark-blue);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
+}
+
+#contact-form div h2 {
+  border-bottom: 3px solid var(--dark-blue);
+}
+
+#contact-form div label {
+  display: inline-block;
+  text-align: left;
+  font-weight: 800;
+  width: 80px;
+  margin-right: 5px;
+}
+
+#contact-form input:active,
+#contact-form input:focus,
+#contact-form textarea:focus,
+#contact-form textarea:active {
+  outline: none;
+}
+
+#contact-form div input {
+  width: 200px;
+  margin: 5px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+#contact-form div textarea {
+  font-size: 14px;
+  margin-top: 15px;
+  padding: 15px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 15px;
+  width: 565px;
+  height: 180px;
+  margin-bottom: 15px;
 }
 
 footer {
   color: #fff;
-  background-color: #6565da;
+  background-color: var(--dark-blue);
   padding: 20px;
 }
 

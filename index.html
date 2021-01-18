@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Florence Dupont Ostéopathe D.O. vous reçoit à son cabinet..."
+    />
+    <meta
+      name="keywords"
+      content="osteopathie, soins, thérapie, médecine, médecine holistique, bien-être, santé"
+    />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/89b48bc496.js"
@@ -24,17 +32,41 @@
     </nav>
     <nav id="nav-bar">
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="#" class="current">Home</a></li>
         <li><a href="#">L'Ostéopathie</a></li>
         <li><a href="#">Consultations</a></li>
         <li><a href="#">Cannabidiol</a></li>
         <li><a href="#">Qui Suis-Je?</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <div class="container">
       <header>
-        <h1>Florence Dupont || Ostéopathe D.O.</h1>
+        <div id="flo">
+          <img src="img/massage-2768833_640.jpg" alt="" />
+          <div id="description">
+            <h1>Florence Dupont || Ostéopathe D.O.</h1>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              odit asperiores. Facere deleniti neque dignissimos maiores commodi
+              ipsa placeat maxime mollitia nam ratione, iure, amet, voluptatibus
+              molestias laboriosam obcaecati consectetur vitae debitis similique
+              harum laborum voluptates at veniam itaque autem. Quas tenetur
+              ullam fugiat et cum doloribus, dolorem laboriosam enim! Lorem
+              ipsum dolor, sit amet consectetur adipisicing elit. Aliquid
+              obcaecati nam tempore totam molestias facilis dignissimos? Lorem
+              ipsum dolor sit amet, consectetur adipisicing elit. Nobis dolorem
+              autem sit error reprehenderit impedit? Incidunt ducimus ex
+              voluptatem sint, vero minima quasi omnis perferendis architecto
+              obcaecati. Reprehenderit, facere ab. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Repudiandae repellat adipisci, sed
+              minus exercitationem sunt! Id fuga excepturi culpa fugit?
+            </p>
+
+            <button id="button">En Savoir Plus...</button>
+          </div>
+        </div>
         <div id="intro">
           <h2>L'Ostéopathie</h2>
           <div id="img-intro">
@@ -64,10 +96,11 @@
             dolor, optio explicabo, dignissimos minus itaque ipsum dicta
             adipisci alias sed illum veritatis debitis laboriosam tenetur.
           </p>
+          <button id="button">En Savoir Plus...</button>
         </div>
         <div>
           <a href="#">
-            <h2>Une formation solide</h2>
+            <h2>Des soins adaptés</h2>
             <img src="img/osteo3.jpg" alt="bébé" />
           </a>
           <p>
@@ -75,6 +108,7 @@
             dolor, optio explicabo, dignissimos minus itaque ipsum dicta
             adipisci alias sed illum veritatis debitis laboriosam tenetur.
           </p>
+          <button id="button">En Savoir Plus...</button>
         </div>
         <div>
           <a href="#">
@@ -90,10 +124,10 @@
         </div>
       </div>
       <div id="cbd">
-        <!-- <div><img src="" alt="" /></div>
-        <div><img src="" alt="" /></div>
-        <div><img src="" alt="" /></div>
-        <div><img src="" alt="" /></div> -->
+        <div class="bubble"><img src="img/endoca.png" alt="" /></div>
+        <div class="bubble"><img src="img/endoca.png" alt="" /></div>
+        <div class="bubble"><img src="img/endoca.png" alt="" /></div>
+        <div class="bubble"><img src="img/endoca.png" alt="" /></div>
         <div id="cbd-intro">
           <h2>Les Compléments Endoca</h2>
           <img src="img/endoca.png" alt="" />
@@ -109,37 +143,43 @@
         </div>
         <div id="products">
           <div class="product">
-            <h3>Cannabidiol</h3>
-            <img src="img/canna3.jpg" alt="endoca cbd oil" />
+            <a href="#"
+              ><h3>Huile de CBD</h3>
+              <img src="img/canna3.jpg" alt="endoca cbd oil" />
+            </a>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
               pariatur tempore laboriosam obcaecati in? Quos nesciunt laudantium
               explicabo necessitatibus facilis deserunt blanditiis quaerat.
               Itaque dolor blanditiis ab ratione vero culpa.
             </p>
-            <button href="#">Acheter</button>
+            <button>Acheter</button>
           </div>
           <div class="product">
-            <h3>Cannabidiol</h3>
-            <img src="img/cannacaps.png" alt="endoca cbd caps" />
+            <a href=""
+              ><h3>Capsules de CBD</h3>
+              <img src="img/cannacaps.png" alt="endoca cbd caps" />
+            </a>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
               pariatur tempore laboriosam obcaecati in? Quos nesciunt laudantium
               explicabo necessitatibus facilis deserunt blanditiis quaerat.
               Itaque dolor blanditiis ab ratione vero culpa.
             </p>
-            <button href="#">Acheter</button>
+            <button>Acheter</button>
           </div>
           <div class="product">
-            <h3>Cannabidiol</h3>
-            <img src="img/cannaextract.png" alt="endoca cbd extract" />
+            <a href=""
+              ><h3>Extrait concentré de CBD</h3>
+              <img src="img/cannaextract.png" alt="endoca cbd extract" />
+            </a>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
               pariatur tempore laboriosam obcaecati in? Quos nesciunt laudantium
               explicabo necessitatibus facilis deserunt blanditiis quaerat.
               Itaque dolor blanditiis ab ratione vero culpa.
             </p>
-            <button href="#">Acheter</button>
+            <button>Acheter</button>
           </div>
         </div>
       </div>
@@ -147,15 +187,14 @@
     <footer>
       <div class="footer-content">
         <p>
-          Florence Dupont &copy; <span id="date">2021</span> - All Right
-          Reserved
+          Florence Dupont &copy; <span id="date"></span> - All Right Reserved
         </p>
         <span>0607181916</span> ||
         <a href="mailto:florence.dupont@osteopathie.fr"
           >florence.dupont@osteopathie.fr</a
         >
       </div>
+      <script src="app.js"></script>
     </footer>
-    <link rel="stylesheet" href="app.js" />
   </body>
 </html>
