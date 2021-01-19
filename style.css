@@ -357,8 +357,18 @@ button:focus {
   margin: 24px auto 50px;
   padding: 30px;
   background-color: var(--godlen-color);
-
   color: #fff;
+}
+
+#cbd #cbd-intro h1 {
+  position: absolute;
+  margin: 10px auto;
+  width: 400px;
+  padding-bottom: 10px;
+  padding-top: 0px;
+  border-bottom: #fff 5px solid;
+  top: 10px;
+  left: 35%;
 }
 
 #cbd #cbd-intro img {
@@ -437,7 +447,123 @@ button:focus {
   border-color: var(--godlen-color);
 }
 
-/* CONTACT PAGE */
+/* OSTEOPATHIE */
+
+#origin {
+  border: 3px solid #000;
+  border-radius: 15px;
+  padding: 15px 50px;
+}
+
+#origin h2 {
+  color: var(--dark-blue);
+  width: 300px;
+  padding-bottom: 5px;
+  margin-left: 100px;
+  border-bottom: 5px solid var(--godlen-color);
+}
+
+#origin h3 {
+  margin-bottom: 20px;
+  color: var(--dark-blue);
+}
+
+.history-box {
+  display: flex;
+  margin: 15px 0;
+}
+
+.history-box:nth-of-type(1) h3,
+.history-box:nth-of-type(3) h3 {
+  margin-left: 15px;
+}
+
+.history-box:nth-of-type(1) p,
+.history-box:nth-of-type(3) p {
+  padding: 20px 0;
+  border-top: 3px solid var(--godlen-color);
+  border-bottom: 3px solid var(--godlen-color);
+}
+.history-box:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+
+.history-box:nth-of-type(2) div,
+.history-box:nth-of-type(3) div {
+  margin: auto 0;
+}
+
+.history-box:nth-of-type(2) h3 {
+  text-align: center;
+}
+
+.history-box:nth-of-type(2) p {
+  padding: 20px 0;
+  margin-right: 20px;
+  border-top: 3px solid var(--dark-blue);
+  border-bottom: 3px solid var(--dark-blue);
+}
+
+.history-box img {
+  border-radius: 15px;
+}
+
+.history-box p {
+  margin: auto;
+  margin-left: 15px;
+}
+
+#technique-title {
+  text-align: center;
+  color: var(--dark-blue);
+  font-size: 2rem;
+  padding: 5px 0;
+  border-top: 5px solid var(--godlen-color);
+  border-bottom: 5px solid var(--godlen-color);
+}
+
+#techniques {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+#techniques .technique {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--dark-blue);
+  color: #fff;
+  border-radius: 15px;
+}
+
+#techniques .technique:nth-child(2),
+#techniques .technique:nth-child(3) {
+  background-color: var(--godlen-color);
+}
+
+#techniques .technique h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0 20px;
+  padding-bottom: 5px;
+  border-bottom: var(--godlen-color) 5px solid;
+}
+
+#techniques .technique:nth-child(2) h3,
+#techniques .technique:nth-child(3) h3 {
+  border-color: var(--dark-blue);
+}
+
+#techniques .technique img {
+  width: 350px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* CONTACT PAGE*/
+
 #contact-form {
   text-align: center;
   border: 3px solid var(--dark-blue);
@@ -448,6 +574,16 @@ button:focus {
 
 #contact-form div h2 {
   border-bottom: 3px solid var(--dark-blue);
+}
+
+#description #flo-email {
+  font-weight: 800;
+  color: var(--dark-blue);
+}
+
+#description span {
+  font-weight: 800;
+  color: var(--dark-blue);
 }
 
 #contact-form div label {
@@ -485,6 +621,11 @@ button:focus {
   width: 565px;
   height: 180px;
   margin-bottom: 15px;
+}
+
+#contact-form button[type='submit']:active {
+  font-weight: 800;
+  color: var(--dark-blue);
 }
 
 footer {
