@@ -562,6 +562,53 @@ button:focus {
   border-radius: 50%;
 }
 
+/* CONSULTATION OSTEO */
+
+#consultations {
+  display: flex;
+  align-items: center;
+  height: 50vh;
+}
+
+#consultations div {
+  display: flex;
+  align-items: center;
+  height: 50vh;
+  padding: 0 20px;
+  border-radius: 25px;
+}
+
+#consultations div h3 {
+  padding: 20px;
+}
+
+#consultations div p {
+  border-right: 2px solid var(--dark-blue);
+  padding: 0 20px;
+}
+
+#consultations div h4 {
+  padding: 20px;
+}
+
+#consultations h2 {
+  color: var(--godlen-color);
+  background-color: var(--dark-blue);
+  text-align: center;
+  padding: 20px;
+  padding-top: 150px;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 15px;
+  width: 500px;
+}
+
+#consultations img {
+  width: 450px;
+  border: 5px solid var(--godlen-color);
+  border-radius: 50%;
+}
+
 /* CONTACT PAGE*/
 
 #contact-form {
