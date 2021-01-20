@@ -53,7 +53,17 @@ button:focus {
 #pr-nav {
   display: flex;
   height: 30vh;
-  background: var(--dark-blue);
+  /* background: var(--dark-blue); */
+  background: linear-gradient(
+    120deg,
+    var(--dark-blue) 25%,
+    var(--godlen-color) 120%
+  );
+  background: linear-gradient(
+    80deg,
+    rgba(8, 8, 102, 0.9) 25%,
+    rgba(8, 8, 102, 0.8) 70%
+  );
   border-bottom: var(--godlen-color) 5px solid;
 }
 
@@ -63,13 +73,23 @@ button:focus {
   font-size: 2rem;
 }
 
+#pr-nav ul {
+  display: flex;
+}
+
 #pr-nav ul li {
-  margin: 20px;
+  margin-right: 20px;
   list-style: none;
 }
 
 #nav-bar {
-  background: var(--dark-blue);
+  background: linear-gradient(
+    20deg,
+    rgba(8, 8, 102, 0.84) 25%,
+    rgba(8, 8, 102, 0.84) 55%,
+    rgba(8, 8, 102, 0.9) 75%,
+    rgba(8, 8, 102) 130%
+  );
 }
 
 #nav-bar ul {
@@ -190,7 +210,11 @@ button:focus {
 }
 
 .container header #intro {
-  background-color: rgba(8, 8, 102, 0.9);
+  background: linear-gradient(
+    80deg,
+    rgba(8, 8, 102, 0.9) 25%,
+    rgba(8, 8, 102, 0.8) 70%
+  );
   font-size: 18px;
   letter-spacing: 0.1rem;
   color: #fff;
@@ -239,7 +263,11 @@ button:focus {
 .osteo div {
   display: flex;
   flex-direction: column;
-  background: var(--dark-blue);
+  background: linear-gradient(
+    80deg,
+    rgba(8, 8, 102, 0.9) 25%,
+    rgba(8, 8, 102, 0.8) 70%
+  );
   border-radius: 15px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -249,7 +277,11 @@ button:focus {
 
 .osteo div:first-child,
 .osteo div:last-child {
-  background-color: var(--godlen-color);
+  background: linear-gradient(
+    80deg,
+    rgb(236, 179, 33, 1) 25%,
+    rgb(236, 179, 33, 0.9) 70%
+  );
   color: var(--dark-blue);
 }
 .osteo a {
@@ -450,8 +482,8 @@ button:focus {
 /* OSTEOPATHIE */
 
 #origin {
-  border: 3px solid #000;
-  border-radius: 15px;
+  border: 3px solid var(--dark-blue);
+  border-radius: 25px;
   padding: 15px 50px;
 }
 
@@ -464,7 +496,7 @@ button:focus {
 }
 
 #origin h3 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: var(--dark-blue);
 }
 
@@ -532,15 +564,23 @@ button:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: #ccc 5px 5px 5px;
   padding: 20px;
-  background-color: var(--dark-blue);
+  background: var(--dark-blue);
   color: #fff;
+  border: 5px solid transparent;
   border-radius: 15px;
+  transition: all 250ms ease-in;
+}
+
+#techniques .technique:hover {
+  border: 5px solid #fff;
+  cursor: pointer;
 }
 
 #techniques .technique:nth-child(2),
 #techniques .technique:nth-child(3) {
-  background-color: var(--godlen-color);
+  background: var(--godlen-color) 25%;
 }
 
 #techniques .technique h3 {
@@ -548,18 +588,30 @@ button:focus {
   text-align: center;
   padding: 0 20px;
   padding-bottom: 5px;
+  border-bottom: transparent 5px solid;
+  transition: all 250ms ease-in;
+}
+
+#techniques .technique:hover h3 {
   border-bottom: var(--godlen-color) 5px solid;
 }
 
-#techniques .technique:nth-child(2) h3,
-#techniques .technique:nth-child(3) h3 {
+#techniques .technique:nth-child(2):hover h3,
+#techniques .technique:nth-child(3):hover h3 {
   border-color: var(--dark-blue);
 }
 
 #techniques .technique img {
   width: 350px;
   height: auto;
+  border: 5px solid transparent;
   border-radius: 50%;
+  transition: all 250ms ease-in;
+}
+
+#techniques .technique:hover img {
+  border: 5px solid #fff;
+  opacity: 0.9;
 }
 
 /* CONSULTATION OSTEO */
@@ -579,7 +631,14 @@ button:focus {
 }
 
 #consultations div h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-left: 15px;
   padding: 20px;
+  border: 3px solid var(--dark-blue);
+  background-color: var(--dark-blue);
+  color: var(--godlen-color);
+  border-radius: 15px;
 }
 
 #consultations div p {
@@ -588,6 +647,13 @@ button:focus {
 }
 
 #consultations div h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  border: 3px solid var(--dark-blue);
+  border-radius: 15px;
+  background-color: var(--dark-blue);
+  color: var(--godlen-color);
+  margin-left: 15px;
   padding: 20px;
 }
 
@@ -610,6 +676,16 @@ button:focus {
 }
 
 /* CONTACT PAGE*/
+
+#contact-flo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#google-map {
+  margin-top: 30px;
+  margin-left: 30px;
+}
 
 #contact-form {
   text-align: center;
@@ -675,10 +751,41 @@ button:focus {
   color: var(--dark-blue);
 }
 
+#rendez-vous {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#rendez-vous h2 {
+  border-bottom: 3px solid var(--dark-blue);
+}
+
+#rendez-vous a {
+  color: var(--dark-blue);
+  font-weight: 800;
+  font-size: 2rem;
+  border-bottom: 3px solid transparent;
+  transition: all 250ms ease-in;
+}
+
+#rendez-vous a:hover {
+  border-bottom: 3px solid var(--godlen-color);
+}
+
 footer {
-  color: #fff;
+  color: var(--godlen-color);
   background-color: var(--dark-blue);
   padding: 20px;
+}
+
+footer a {
+  color: var(--godlen-color);
+  border-bottom: transparent 3px solid;
+  transition: all 250ms ease-in;
+}
+
+footer a:hover {
+  border-bottom: var(--godlen-color) 3px solid;
 }
 
 .footer-content {
