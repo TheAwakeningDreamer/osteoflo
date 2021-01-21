@@ -53,17 +53,8 @@ button:focus {
 #pr-nav {
   display: flex;
   height: 30vh;
-  /* background: var(--dark-blue); */
-  background: linear-gradient(
-    120deg,
-    var(--dark-blue) 25%,
-    var(--godlen-color) 120%
-  );
-  background: linear-gradient(
-    80deg,
-    rgba(8, 8, 102, 0.9) 25%,
-    rgba(8, 8, 102, 0.8) 70%
-  );
+  /* background: var(--light-blue); */
+  background: var(--light-blue);
   border-bottom: var(--godlen-color) 5px solid;
 }
 
@@ -92,13 +83,7 @@ button:focus {
 }
 
 #nav-bar {
-  background: linear-gradient(
-    20deg,
-    rgba(8, 8, 102, 0.84) 25%,
-    rgba(8, 8, 102, 0.84) 55%,
-    rgba(8, 8, 102, 0.9) 75%,
-    rgba(8, 8, 102) 130%
-  );
+  background: var(--light-blue);
 }
 
 #nav-bar ul {
@@ -162,12 +147,12 @@ button:focus {
   margin-bottom: 20px;
   padding-bottom: 10px;
   width: 80%;
-  color: var(--dark-blue);
+  color: var(--light-blue);
   border-bottom: var(--godlen-color) 5px solid;
 }
 
 .container header #flo h3 {
-  color: var(--dark-blue);
+  color: var(--light-blue);
   width: 80%;
   margin: 0 auto;
   margin-top: 25px;
@@ -192,10 +177,11 @@ button:focus {
 
 .container header #flo img {
   border-radius: 15px;
+  box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
 }
 
 .container header #flo button {
-  border: 3px solid var(--dark-blue);
+  border: 3px solid var(--light-blue);
   transition: all 250ms ease-in;
 }
 .container header #flo button#button:hover {
@@ -219,11 +205,7 @@ button:focus {
 }
 
 .container header #intro {
-  background: linear-gradient(
-    80deg,
-    rgba(8, 8, 102, 0.9) 25%,
-    rgba(8, 8, 102, 0.8) 70%
-  );
+  background: var(--light-blue);
   font-size: 18px;
   letter-spacing: 0.1rem;
   color: #fff;
@@ -232,6 +214,7 @@ button:focus {
   margin: 0 auto 20px;
   padding: 20px 30px;
   border-radius: 15px;
+  box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
 }
 
 .container header #intro #img-intro {
@@ -282,6 +265,7 @@ button:focus {
   padding-bottom: 25px;
   font-size: 18px;
   color: #fff;
+  box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
 }
 
 .osteo div:first-child,
@@ -291,7 +275,7 @@ button:focus {
     rgb(236, 179, 33, 1) 25%,
     rgb(236, 179, 33, 0.9) 70%
   );
-  color: var(--dark-blue);
+  color: var(--light-blue);
 }
 .osteo a {
   color: white;
@@ -341,9 +325,10 @@ button:focus {
 #reviews {
   text-align: center;
   color: #fff;
-  background: var(--dark-blue);
+  background: var(--light-blue);
   padding: 10px;
   border-radius: 15px;
+  box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
 }
 
 #temoignages {
@@ -354,19 +339,28 @@ button:focus {
 
 .temoignage {
   padding: 10px;
-  border: 3px solid var(--dark-blue);
+  border: 3px solid var(--light-blue);
   border-radius: 15px;
   text-align: center;
+  box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
+}
+
+.temoignage h3 {
+  padding-top: 10px;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  border-bottom: double 5px #fff;
 }
 
 .temoignage:nth-child(even) {
-  color: var(--dark-blue);
+  color: #fff;
   background: var(--godlen-color);
   border: none;
 }
 .temoignage:nth-child(odd) {
   color: #fff;
-  background: var(--dark-blue);
+  background: var(--light-blue);
 }
 
 .temoignage1 {
@@ -434,7 +428,7 @@ button:focus {
   width: 80%;
   height: 5px;
   display: block;
-  background-color: var(--dark-blue);
+  background-color: var(--light-blue);
   margin: 20px auto 30px;
 }
 
@@ -491,7 +485,7 @@ button:focus {
 }
 
 #cbd #products a {
-  color: var(--dark-blue);
+  color: var(--light-blue);
 }
 
 #cbd #products a:hover {
@@ -504,10 +498,10 @@ button:focus {
   margin: 0 auto 10px;
   padding-top: 10px;
   padding-bottom: 5px;
-  border-bottom: var(--dark-blue) 3px solid;
+  border-bottom: var(--light-blue) 3px solid;
 }
 #cbd #products img {
-  border: var(--dark-blue) solid 5px;
+  border: var(--light-blue) solid 5px;
   border-radius: 50%;
   transition: all 250ms ease;
 }
@@ -524,7 +518,7 @@ button:focus {
   margin: auto;
   width: 10rem;
   padding: 15px 10px;
-  border: 3px solid var(--dark-blue);
+  border: 3px solid var(--light-blue);
   border-radius: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -538,13 +532,13 @@ button:focus {
 /* OSTEOPATHIE */
 
 #origin {
-  border: 3px solid var(--dark-blue);
+  border: 3px solid var(--light-blue);
   border-radius: 25px;
   padding: 15px 50px;
 }
 
 #origin h2 {
-  color: var(--dark-blue);
+  color: #000;
   width: 300px;
   padding-bottom: 5px;
   margin-left: 100px;
@@ -552,8 +546,9 @@ button:focus {
 }
 
 #origin h3 {
+  text-align: center;
   margin-bottom: 30px;
-  color: var(--dark-blue);
+  color: #000;
 }
 
 .history-box {
@@ -581,19 +576,16 @@ button:focus {
   margin: auto 0;
 }
 
-.history-box:nth-of-type(2) h3 {
-  text-align: center;
-}
-
 .history-box:nth-of-type(2) p {
   padding: 20px 0;
   margin-right: 20px;
-  border-top: 3px solid var(--dark-blue);
-  border-bottom: 3px solid var(--dark-blue);
+  border-top: 3px solid var(--light-blue);
+  border-bottom: 3px solid var(--light-blue);
 }
 
 .history-box img {
   border-radius: 15px;
+  box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
 }
 
 .history-box p {
@@ -603,9 +595,9 @@ button:focus {
 
 #technique-title {
   text-align: center;
-  color: var(--dark-blue);
+  color: #000;
   font-size: 2rem;
-  padding: 5px 0;
+  padding: 15px;
   border-top: 5px solid var(--godlen-color);
   border-bottom: 5px solid var(--godlen-color);
 }
@@ -622,7 +614,7 @@ button:focus {
   align-items: center;
   box-shadow: #ccc 5px 5px 5px;
   padding: 20px;
-  background: var(--dark-blue);
+  background: var(--light-blue);
   color: #fff;
   border: 5px solid transparent;
   border-radius: 15px;
@@ -654,7 +646,7 @@ button:focus {
 
 #techniques .technique:nth-child(2):hover h3,
 #techniques .technique:nth-child(3):hover h3 {
-  border-color: var(--dark-blue);
+  border-color: var(--light-blue);
 }
 
 #techniques .technique img {
@@ -672,10 +664,21 @@ button:focus {
 
 /* CONSULTATION OSTEO */
 
+#consult-title {
+  color: var(--light-blue);
+  font-size: 2rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
 #consultations {
   display: flex;
+  flex-direction: column;
   align-items: center;
   height: 50vh;
+  background: var(--light-blue);
+  padding-left: 15px;
+  border-radius: 15px;
 }
 
 #consultations div {
@@ -684,6 +687,7 @@ button:focus {
   height: 50vh;
   padding: 0 20px;
   border-radius: 25px;
+  box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
 }
 
 #consultations div h3 {
@@ -691,20 +695,29 @@ button:focus {
   font-size: 1.5rem;
   margin-left: 15px;
   padding: 20px;
-  border: 3px solid var(--dark-blue);
-  background-color: var(--dark-blue);
-  color: var(--godlen-color);
+  border: 3px solid var(--light-blue);
+  background-color: var(--light-blue);
+  color: #fff;
   border-radius: 15px;
 }
 
 #consultations div p {
-  border-right: 2px solid var(--dark-blue);
+  text-align: center;
+  color: #fff;
+}
+
+#consultations div p:first-of-type {
+  border-right: 5px solid var(--godlen-color);
   padding: 0 20px;
 }
 
-#consultations h2 {
+#consultations div p:nth-of-type(2) {
+  margin-left: 20px;
+}
+
+#container h2 {
   color: var(--godlen-color);
-  background-color: var(--dark-blue);
+  background-color: var(--light-blue);
   text-align: center;
   padding: 20px;
   padding-top: 150px;
@@ -721,14 +734,30 @@ button:focus {
 }
 
 #consultations span {
-  border-bottom: 3px solid var(--godlen-color);
+  display: inline-block;
+  padding: 10px;
+  border: 5px solid var(--godlen-color);
+  border-radius: 15px;
   line-height: 30px;
+}
+
+.consult-container {
+  width: 60%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 .consult#rendez-vous {
   border-top: 5px solid var(--godlen-color);
   margin: 10px auto;
+  padding-bottom: 10px;
   width: 50%;
+}
+
+.consult#rendez-vous h2 {
+  padding-bottom: 20px;
+  color: chocolate;
 }
 
 /* CONTACT PAGE*/
@@ -743,26 +772,31 @@ button:focus {
   margin-left: 30px;
 }
 
+#google-map iframe {
+  border-radius: 5px;
+  box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
+}
+
 #contact-form {
   text-align: center;
-  border: 3px solid var(--dark-blue);
+  border: 3px solid var(--light-blue);
   border-radius: 15px;
   padding: 15px;
   box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
 }
 
 #contact-form div h2 {
-  border-bottom: 3px solid var(--dark-blue);
+  border-bottom: 3px solid var(--light-blue);
 }
 
 #description #flo-email {
   font-weight: 800;
-  color: var(--dark-blue);
+  color: var(--light-blue);
 }
 
 #description span {
   font-weight: 800;
-  color: var(--dark-blue);
+  color: var(--light-blue);
 }
 
 #contact-form div label {
@@ -804,7 +838,7 @@ button:focus {
 
 #contact-form button[type='submit']:active {
   font-weight: 800;
-  color: var(--dark-blue);
+  color: var(--light-blue);
 }
 
 #rendez-vous {
@@ -813,11 +847,11 @@ button:focus {
 }
 
 #rendez-vous h2 {
-  border-bottom: 3px solid var(--dark-blue);
+  border-bottom: 3px solid var(--light-blue);
 }
 
 #rendez-vous a {
-  color: var(--dark-blue);
+  color: var(--light-blue);
   font-weight: 800;
   font-size: 2rem;
   border-bottom: 3px solid transparent;
@@ -831,30 +865,44 @@ button:focus {
 footer {
   position: relative;
   color: #fff;
-  background-color: var(--dark-blue);
+  background-color: var(--light-blue);
   padding: 20px;
 }
 
 footer #rendez-vous {
-  padding-bottom: 10px;
+  padding: 20px;
+  border: 5px solid var(--godlen-color);
+  border-radius: 15px;
   color: var(--godlen-color);
   width: 50%;
   margin: 0 auto;
 }
 
 footer #rendez-vous h2 {
+  color: #fff;
   width: 500px;
   margin: 0 auto;
   padding-bottom: 10px;
   border-bottom: #fff 5px solid;
 }
 
-footer #rendez-vous a {
+footer p {
   color: #fff;
 }
 
+footer #rendez-vous a {
+  color: #fff;
+  border-bottom: transparent 5px solid;
+  transition: all 250ms ease-in;
+}
+
+footer #rendez-vous a:hover {
+  color: #fff;
+  border-bottom: #fff 5px solid;
+}
+
 footer a {
-  color: var(--godlen-color);
+  color: #fff;
   border-bottom: transparent 3px solid;
   transition: all 250ms ease-in;
 }
