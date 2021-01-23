@@ -16,7 +16,7 @@ a {
 }
 
 a.current {
-  color: var(--godlen-color);
+  color: var(--dark-blue);
 }
 
 a.current:before {
@@ -34,7 +34,7 @@ a.current:before {
 }
 
 a:hover {
-  color: var(--godlen-color);
+  color: var(--dark-blue);
 }
 button {
   transition: all 250ms ease;
@@ -55,12 +55,12 @@ button:focus {
   height: 30vh;
   /* background: var(--light-blue); */
   background: var(--light-blue);
-  border-bottom: var(--godlen-color) 5px solid;
+  border-bottom: var(--dark-blue) 5px solid;
 }
 
 #pr-nav h3 {
   margin: auto;
-  color: var(--godlen-color);
+  color: #fff;
   font-size: 2rem;
 }
 
@@ -148,7 +148,7 @@ button:focus {
   padding-bottom: 10px;
   width: 80%;
   color: var(--light-blue);
-  border-bottom: var(--godlen-color) 5px solid;
+  border-bottom: var(--dark-blue) 5px solid;
 }
 
 .container header #flo h3 {
@@ -165,7 +165,7 @@ button:focus {
   display: block;
   width: 250px;
   height: 5px;
-  background-color: var(--godlen-color);
+  background-color: var(--dark-blue);
   margin: 20px auto 0;
 }
 
@@ -185,7 +185,7 @@ button:focus {
   transition: all 250ms ease-in;
 }
 .container header #flo button#button:hover {
-  border-color: var(--godlen-color);
+  border-color: var(--dark-blue);
 }
 
 .container header h2 {
@@ -198,10 +198,10 @@ button:focus {
 
 .container header #intro:hover h2 {
   width: 500px;
-  border-bottom: var(--godlen-color) 5px solid;
+  border-bottom: var(--dark-blue) 5px solid;
   transform: translateY(10px);
   cursor: pointer;
-  color: var(--godlen-color);
+  color: var(--dark-blue);
 }
 
 .container header #intro {
@@ -253,13 +253,9 @@ button:focus {
 }
 
 .osteo div {
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(
-    80deg,
-    rgba(8, 8, 102, 0.9) 25%,
-    rgba(8, 8, 102, 0.8) 70%
-  );
+  display: grid;
+  grid-template-rows: 1fr 0.3fr;
+  background: var(--light-blue);
   border-radius: 15px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -268,31 +264,17 @@ button:focus {
   box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
 }
 
-.osteo div:first-child,
-.osteo div:last-child {
-  background: linear-gradient(
-    80deg,
-    rgb(236, 179, 33, 1) 25%,
-    rgb(236, 179, 33, 0.9) 70%
-  );
-  color: var(--light-blue);
-}
 .osteo a {
   color: white;
 }
 
 .osteo a h2 {
   width: 70%;
-  color: rgba(8, 8, 102, 0.9);
+  color: #fff;
   margin: 14px auto;
   border-bottom: transparent 3px solid;
   padding-bottom: 10px;
   transition: border-bottom 250ms linear;
-}
-
-.osteo div:nth-child(2) a h2,
-.osteo div:nth-child(2) p {
-  color: var(--godlen-color);
 }
 
 .osteo a:hover h2 {
@@ -355,7 +337,7 @@ button:focus {
 
 .temoignage:nth-child(even) {
   color: #fff;
-  background: var(--godlen-color);
+  background: var(--dark-blue);
   border: none;
 }
 .temoignage:nth-child(odd) {
@@ -438,7 +420,7 @@ button:focus {
   border-radius: 50%;
   margin: 24px auto 50px;
   padding: 30px;
-  background-color: var(--godlen-color);
+  background-color: var(--dark-blue);
   color: #fff;
 }
 
@@ -508,7 +490,7 @@ button:focus {
 
 #cbd #products img:hover {
   cursor: pointer;
-  border-color: var(--godlen-color);
+  border-color: var(--dark-blue);
   transform: scale(0.98);
 }
 
@@ -526,7 +508,7 @@ button:focus {
 }
 
 #cbd #products button:hover {
-  border-color: var(--godlen-color);
+  border-color: var(--dark-blue);
 }
 
 /* OSTEOPATHIE */
@@ -542,7 +524,7 @@ button:focus {
   width: 300px;
   padding-bottom: 5px;
   margin-left: 100px;
-  border-bottom: 5px solid var(--godlen-color);
+  border-bottom: 5px solid var(--dark-blue);
 }
 
 #origin h3 {
@@ -564,8 +546,8 @@ button:focus {
 .history-box:nth-of-type(1) p,
 .history-box:nth-of-type(3) p {
   padding: 20px 0;
-  border-top: 3px solid var(--godlen-color);
-  border-bottom: 3px solid var(--godlen-color);
+  border-top: 3px solid var(--dark-blue);
+  border-bottom: 3px solid var(--dark-blue);
 }
 .history-box:nth-of-type(2) {
   flex-direction: row-reverse;
@@ -598,8 +580,8 @@ button:focus {
   color: #000;
   font-size: 2rem;
   padding: 15px;
-  border-top: 5px solid var(--godlen-color);
-  border-bottom: 5px solid var(--godlen-color);
+  border-top: 5px solid var(--dark-blue);
+  border-bottom: 5px solid var(--dark-blue);
 }
 
 #techniques {
@@ -628,7 +610,7 @@ button:focus {
 
 #techniques .technique:nth-child(2),
 #techniques .technique:nth-child(3) {
-  background: var(--godlen-color) 25%;
+  background: var(--dark-blue) 25%;
 }
 
 #techniques .technique h3 {
@@ -641,7 +623,7 @@ button:focus {
 }
 
 #techniques .technique:hover h3 {
-  border-bottom: var(--godlen-color) 5px solid;
+  border-bottom: var(--dark-blue) 5px solid;
 }
 
 #techniques .technique:nth-child(2):hover h3,
@@ -707,7 +689,7 @@ button:focus {
 }
 
 #consultations div p:first-of-type {
-  border-right: 5px solid var(--godlen-color);
+  border-right: 5px solid var(--dark-blue);
   padding: 0 20px;
 }
 
@@ -716,7 +698,7 @@ button:focus {
 }
 
 #container h2 {
-  color: var(--godlen-color);
+  color: var(--dark-blue);
   background-color: var(--light-blue);
   text-align: center;
   padding: 20px;
@@ -729,14 +711,14 @@ button:focus {
 
 #consultations img {
   width: 450px;
-  border: 5px solid var(--godlen-color);
+  border: 5px solid var(--dark-blue);
   border-radius: 50%;
 }
 
 #consultations span {
   display: inline-block;
   padding: 10px;
-  border: 5px solid var(--godlen-color);
+  border: 5px solid var(--dark-blue);
   border-radius: 15px;
   line-height: 30px;
 }
@@ -749,7 +731,7 @@ button:focus {
 }
 
 .consult#rendez-vous {
-  border-top: 5px solid var(--godlen-color);
+  border-top: 5px solid var(--dark-blue);
   margin: 10px auto;
   padding-bottom: 10px;
   width: 50%;
@@ -859,7 +841,7 @@ button:focus {
 }
 
 #rendez-vous a:hover {
-  border-bottom: 3px solid var(--godlen-color);
+  border-bottom: 3px solid var(--dark-blue);
 }
 
 footer {
@@ -870,10 +852,11 @@ footer {
 }
 
 footer #rendez-vous {
+  box-shadow: var(--dark-blue) 5px 5px 5px;
   padding: 20px;
-  border: 5px solid var(--godlen-color);
+  border: 5px solid var(--dark-blue);
   border-radius: 15px;
-  color: var(--godlen-color);
+  color: var(--dark-blue);
   width: 50%;
   margin: 0 auto;
 }
@@ -908,7 +891,7 @@ footer a {
 }
 
 footer a:hover {
-  border-bottom: var(--godlen-color) 3px solid;
+  border-bottom: var(--dark-blue) 3px solid;
 }
 
 .footer-content {

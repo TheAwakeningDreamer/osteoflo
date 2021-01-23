@@ -1,7 +1,6 @@
 :root {
-  --dark-blue: rgb(8, 8, 102, 0.9);
+  --dark-blue: rgba(24, 24, 190, 0.9);
   --light-blue: rgb(73, 182, 234);
-  --godlen-color: rgb(236, 179, 33);
   --dark-purple: #8a2be2;
   --light-purple: #6565da;
   --background: rgba(233, 209, 255, 0.61);
