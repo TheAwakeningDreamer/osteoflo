@@ -764,8 +764,7 @@ button:focus {
 /* CONTACT PAGE*/
 
 #google-map {
-  margin-top: 30px;
-  margin-left: 70px;
+  margin: 30px auto;
 }
 
 #google-map iframe {
