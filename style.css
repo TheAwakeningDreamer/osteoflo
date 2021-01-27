@@ -1535,7 +1535,7 @@ footer #creator {
   #posts {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0 auto;
+    margin: 10px auto;
     text-align: center;
   }
 
