@@ -890,6 +890,16 @@ button:focus {
   border-bottom: 5px solid var(--dark-blue);
 }
 
+/* Art */
+
+#posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 15px;
+  text-align: center;
+}
+
 footer {
   position: relative;
   color: #fff;
@@ -1518,6 +1528,15 @@ footer #creator {
 
   #rendez-vous a:hover {
     border-bottom: 5px solid var(--dark-blue);
+  }
+
+  /* Art */
+
+  #posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    text-align: center;
   }
 
   /* Footer */
