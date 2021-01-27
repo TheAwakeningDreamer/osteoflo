@@ -974,7 +974,10 @@ footer #creator {
     background: var(--light-blue);
     border-bottom: gold 5px solid;
     text-align: center;
-    line-height: 2.4rem;
+  }
+
+  #pr-nav h3 {
+    line-height: 3rem;
   }
 
   #pr-nav img {
@@ -1182,14 +1185,18 @@ footer #creator {
   #techniques {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   #techniques .technique {
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
+    justify-content: center;
     box-shadow: #ccc 5px 5px 5px;
-    padding: 20px;
+    padding: 10px;
     background: var(--light-blue);
     color: #fff;
     border: 5px solid transparent;
@@ -1358,6 +1365,15 @@ footer #creator {
     line-height: 30px;
   }
 
+  /* Qui suis je? */
+  #description #whoami {
+    width: 100%;
+  }
+
+  #description #whoami + h3 {
+    margin-top: 10px;
+  }
+
   /* CONTACT PAGE*/
 
   #contact-flo {
@@ -1417,7 +1433,9 @@ footer #creator {
 
   #description h1 {
     padding-top: 15px;
+    padding-bottom: 15px;
     margin: 0 auto;
+    width: 100%;
   }
 
   #description #flo-email {
