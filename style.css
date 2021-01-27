@@ -272,6 +272,10 @@ button:focus {
   box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
 }
 
+.osteo div:nth-of-type(odd) {
+  background: var(--dark-blue);
+}
+
 .osteo a {
   color: white;
 }
@@ -992,12 +996,12 @@ footer #creator {
 
   #pr-nav .social ul li {
     margin-right: 0;
-  }
-  #pr-nav .social ul li {
     padding-right: 5px;
   }
+  #pr-nav .social ul li:first-of-type {
+    padding-bottom: 490%;
+  }
   #pr-nav .social ul li:nth-of-type(2) {
-    padding-right: 7px;
   }
 
   #nav-bar ul {
