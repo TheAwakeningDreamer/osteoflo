@@ -52,7 +52,7 @@ button:focus {
 
 #pr-nav {
   display: flex;
-  height: 30vh;
+  min-height: 25vh;
   background: var(--light-blue);
   border-bottom: gold 5px solid;
 }
@@ -83,6 +83,10 @@ button:focus {
 
 #nav-bar {
   background: var(--light-blue);
+}
+
+#nav-bar #menu {
+  display: none;
 }
 
 #nav-bar ul {
@@ -137,9 +141,13 @@ button:focus {
   text-align: center;
 }
 
-.container header #flo #description {
+.container header #flo #description-contact {
   margin: 0 auto;
   padding: 20px;
+}
+
+.container header #flo h1 #osteo-flo {
+  color: var(--dark-blue);
 }
 
 .container header #flo h1 {
@@ -580,8 +588,7 @@ button:focus {
   border-radius: 15px;
   box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
 }
-
-.history-box p {
+h .history-box p {
   margin: auto;
   margin-left: 15px;
 }
@@ -619,7 +626,8 @@ button:focus {
   cursor: pointer;
 }
 
-#techniques .technique:nth-child(even) {
+#techniques .technique:nth-child(2),
+#techniques .technique:nth-child(3) {
   background: var(--dark-blue) 25%;
 }
 
@@ -813,16 +821,16 @@ button:focus {
   border-bottom: 3px solid var(--light-blue);
 }
 
-#description #flo-email {
+#description-contact #flo-email {
   font-weight: 800;
   color: var(--light-blue);
 }
 
-#description #flo-email:hover {
+#description-contact #flo-email:hover {
   color: var(--dark-blue);
 }
 
-#description span {
+#description-contact span {
   font-weight: 800;
   color: var(--light-blue);
 }
@@ -969,617 +977,4 @@ footer a:hover {
 footer #creator {
   position: absolute;
   bottom: 0;
-}
-
-@media all and (max-width: 500px) {
-  img {
-    max-width: 300px;
-  }
-
-  #pr-nav {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 20vh;
-    background: var(--light-blue);
-    border-bottom: gold 5px solid;
-    text-align: center;
-  }
-
-  #pr-nav h3 {
-    line-height: 3rem;
-  }
-
-  #pr-nav img {
-    display: none;
-  }
-
-  #pr-nav .social {
-    position: relative;
-  }
-
-  #pr-nav .social ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: absolute;
-    right: 0px;
-  }
-
-  #pr-nav .social ul li {
-    margin-right: 0;
-    padding-right: 5px;
-  }
-  #pr-nav .social ul li:first-of-type {
-    padding-bottom: 490%;
-  }
-  #pr-nav .social ul li:nth-of-type(2) {
-  }
-
-  #nav-bar ul {
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  header #flo {
-    display: block !important;
-  }
-
-  .container header #intro {
-    background: var(--light-blue);
-    font-size: 18px;
-    letter-spacing: 0.1rem;
-    color: #fff;
-    width: 70%;
-    text-align: center;
-    margin: 0 auto 20px;
-    padding: 20px 50px;
-    border-radius: 15px;
-    box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
-  }
-
-  header #intro h2 {
-    width: 100%;
-    margin: 0;
-    text-align: center;
-  }
-
-  header #intro #img-intro {
-  }
-
-  header #intro img:nth-of-type(2),
-  header #intro img:nth-of-type(3) {
-    display: none;
-  }
-
-  .osteo {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .osteo div {
-    display: grid;
-    grid-template-rows: 1fr 0.3fr;
-    background: var(--light-blue);
-    border-radius: 15px;
-    padding: 25px 20px;
-    font-size: 18px;
-    color: #fff;
-    box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
-  }
-
-  #temoignages {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .temoignage h3 {
-    padding: 5px 0;
-    width: 300px;
-    margin: 0 auto;
-    font-size: 1.4rem;
-    border-bottom: double 5px #fff;
-  }
-
-  .temoignage:nth-child(even) {
-    color: gold;
-    background: var(--dark-blue);
-    border: none;
-  }
-  .temoignage:nth-child(odd) {
-    color: #fff;
-    background: var(--light-blue);
-  }
-
-  .temoignage1 {
-    grid-column: 1/2;
-  }
-  .temoignage2 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-  .temoignage3 {
-    grid-column: 1/2;
-  }
-  .temoignage7 {
-    grid-column: 1/2;
-  }
-
-  /* OSTEOPATHIE */
-
-  #origin {
-    border-right: 5px solid var(--light-blue);
-    border-left: 5px solid var(--light-blue);
-    border-radius: 25px;
-    padding: 15px 15px;
-  }
-
-  #origin h2 {
-    color: var(--dark-blue);
-    width: 100%;
-    padding-bottom: 5px;
-    margin-left: 0;
-    text-align: center;
-    border-bottom: 5px solid var(--dark-blue);
-  }
-
-  #origin img {
-    width: 100%;
-    height: 100%;
-  }
-
-  #origin h3 {
-    text-align: center;
-    margin-bottom: 15px;
-  }
-
-  .history-box {
-    display: flex;
-    flex-direction: column;
-    margin: 15px 0;
-  }
-
-  .history-box div {
-    margin: auto 0;
-  }
-
-  .history-box:nth-of-type(1) h3,
-  .history-box:nth-of-type(3) h3 {
-    color: var(--dark-blue);
-    margin-left: 15px;
-  }
-
-  .history-box:nth-of-type(1) p,
-  .history-box:nth-of-type(3) p {
-    padding: 20px 0;
-    border-top: 3px solid var(--dark-blue);
-    border-bottom: 3px solid var(--dark-blue);
-  }
-  .history-box:nth-of-type(2) {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .history-box:nth-of-type(2) p {
-    padding: 20px 0;
-    margin-right: 20px;
-    border-top: 3px solid var(--light-blue);
-    border-bottom: 3px solid var(--light-blue);
-  }
-
-  .history-box img {
-    border-radius: 15px;
-    box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
-  }
-
-  .history-box p {
-    margin: auto;
-    margin-left: 15px;
-  }
-
-  #technique-title {
-    text-align: center;
-    color: var(--light-blue);
-    font-size: 2rem;
-    padding: 15px;
-    border-top: 5px solid var(--dark-blue);
-    border-bottom: 5px solid var(--dark-blue);
-  }
-
-  #techniques {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #techniques .technique {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    box-shadow: #ccc 5px 5px 5px;
-    padding: 10px;
-    background: var(--light-blue);
-    color: #fff;
-    border: 5px solid transparent;
-    border-radius: 15px;
-    transition: all 250ms ease-in;
-  }
-
-  #techniques .technique:hover {
-    border: 5px solid #fff;
-    cursor: pointer;
-  }
-
-  #techniques .technique:nth-child(even) {
-    background: var(--dark-blue) 25%;
-  }
-
-  #techniques .technique h3 {
-    font-size: 2rem;
-    text-align: center;
-    padding: 0 20px;
-    margin: 0;
-    padding-bottom: 5px;
-    border-bottom: transparent 5px solid;
-    transition: all 250ms ease-in;
-  }
-
-  #techniques .technique:hover h3 {
-    color: gold;
-    border-bottom: var(--dark-blue) 5px solid;
-  }
-
-  #techniques .technique:nth-child(2):hover h3,
-  #techniques .technique:nth-child(3):hover h3 {
-    border-color: var(--light-blue);
-  }
-
-  #techniques .technique img {
-    width: 350px;
-    height: auto;
-    border: 5px solid transparent;
-    border-radius: 50%;
-    transition: all 250ms ease-in;
-  }
-
-  #techniques .technique:hover img {
-    border: 5px solid #fff;
-    opacity: 0.9;
-  }
-
-  /* CONSULTATION OSTEO */
-
-  #consult-title {
-    color: var(--light-blue);
-    font-size: 2rem;
-    text-align: center;
-    position: relative;
-  }
-
-  #consult-title:after {
-    display: block;
-    content: '';
-    width: 50%;
-    height: 5px;
-    background-color: var(--dark-blue);
-    border-radius: 15px;
-    position: absolute;
-    left: 25%;
-    bottom: -10px;
-  }
-
-  #consultations {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    background: var(--light-blue);
-    padding-left: 15px;
-    padding-top: 30px;
-    border-radius: 15px;
-  }
-
-  #consultations div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    padding: 0 20px;
-    border-radius: 25px;
-    box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
-  }
-
-  #consultations div h2 {
-    color: #fff;
-    margin-left: 20px;
-    padding-right: 10px;
-  }
-
-  #consultations div p {
-    font-size: 1.1rem;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    align-self: center;
-    text-align: center;
-    color: #fff;
-  }
-
-  #consultations div p:first-of-type {
-    border-right: 5px solid var(--dark-blue);
-    border-top-right-radius: 15px;
-    border-left: 5px solid var(--dark-blue);
-    border-top-left-radius: 15px;
-    padding: 0 20px;
-  }
-
-  #consultations div p:nth-of-type(2) {
-    margin-left: 0px;
-    border-right: 5px solid var(--dark-blue);
-    border-bottom-right-radius: 15px;
-    border-left: 5px solid var(--dark-blue);
-    border-bottom-left-radius: 15px;
-    padding: 0 20px;
-  }
-
-  #container h2 {
-    color: var(--dark-blue);
-    background-color: var(--light-blue);
-    text-align: center;
-    padding: 20px;
-    padding-top: 150px;
-    align-items: center;
-    align-self: stretch;
-    border-radius: 15px;
-    width: 500px;
-  }
-
-  #consultations img {
-    width: 450px;
-    border-radius: 50%;
-  }
-
-  #consult-prix h3 {
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    margin-left: 0px;
-    padding: 20px;
-    background-color: var(--light-blue);
-    color: #fff;
-    border-radius: 15px;
-    box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
-  }
-
-  #consult-prix #time {
-    padding-bottom: 8px;
-    border-radius: 15px;
-    border-bottom: 5px solid gold;
-  }
-
-  #consult-prix #prix {
-    display: block;
-    width: 80%;
-    margin: 0 auto;
-    padding: 5px;
-    border-bottom: 5px solid gold;
-    border-radius: 15px;
-    line-height: 30px;
-  }
-
-  /* Qui suis je? */
-  #description #whoami {
-    width: 100%;
-  }
-
-  #description #whoami + h3 {
-    margin-top: 10px;
-  }
-
-  /* CONTACT PAGE*/
-
-  #contact-flo {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  #google-map {
-    margin: 0 auto;
-  }
-
-  #google-map iframe {
-    margin: 0 auto;
-    width: 300px;
-    border-radius: 5px;
-    box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
-  }
-
-  #contact-flo h1 {
-    width: 80%;
-    text-align: center;
-    padding-bottom: 10px;
-    color: var(--light-blue);
-    position: relative;
-  }
-
-  #contact-flo h1:after {
-    display: block;
-    content: '';
-    width: 100%;
-    height: 5px;
-    background-color: #fff;
-    border-radius: 15px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-
-  #contact-form {
-    text-align: center;
-    border: 3px solid var(--light-blue);
-    border-radius: 15px;
-    margin-top: 20px;
-    padding: 15px;
-    box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
-  }
-
-  #contact-form div h2 {
-    border-bottom: 3px solid var(--light-blue);
-  }
-
-  #description {
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  #description h1 {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  #description #flo-email {
-    font-weight: 800;
-    color: var(--light-blue);
-  }
-
-  #description #flo-email:hover {
-    color: var(--dark-blue);
-  }
-
-  #description span {
-    font-weight: 800;
-    color: var(--light-blue);
-  }
-
-  #contact-form div label {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    font-weight: 800;
-    width: 80px;
-  }
-
-  #contact-form input:active,
-  #contact-form input:focus,
-  #contact-form textarea:focus,
-  #contact-form textarea:active {
-    outline: none;
-  }
-
-  #contact-form div input {
-    width: 200px;
-    margin: 5px;
-    margin-bottom: 15px;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    border-radius: 15px;
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  #contact-form div textarea {
-    font-size: 14px;
-    margin-top: 15px;
-    padding: 15px;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    border-radius: 15px;
-    width: 80%;
-    height: 180px;
-    margin-bottom: 15px;
-  }
-
-  #contact-form button[type='submit']:active {
-    font-weight: 800;
-    color: var(--light-blue);
-  }
-
-  #rendez-vous {
-    margin-right: 0px;
-    padding-bottom: 15px;
-    border-bottom: 5px solid var(--dark-blue);
-    text-align: center;
-  }
-
-  #rendez-vous h2 {
-    margin-top: 15px;
-    color: var(--dark-blue);
-    border-bottom: 5px solid var(--light-blue);
-  }
-
-  #rendez-vous a {
-    color: var(--light-blue);
-    font-weight: 800;
-    font-size: 2rem;
-    border-bottom: 3px solid transparent;
-    transition: all 250ms ease-in;
-  }
-
-  #rendez-vous a:hover {
-    border-bottom: 5px solid var(--dark-blue);
-  }
-
-  /* Art */
-
-  #posts {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 10px auto;
-    text-align: center;
-  }
-
-  /* Footer */
-
-  footer #rendez-vous {
-    box-shadow: var(--dark-blue) 5px 5px 5px;
-    padding: 20px;
-    border: 5px solid var(--dark-blue);
-    border-radius: 15px;
-    color: var(--dark-blue);
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  footer #rendez-vous h2 {
-    width: 100%;
-  }
-
-  footer .footer-content {
-    font-size: 1.4rem;
-  }
-
-  footer .footer-content p {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: 5px solid #fff;
-  }
-
-  footer #creator {
-    position: relative;
-    padding-top: 10px;
-    text-align: center;
-  }
-
-  footer #creator:before {
-    content: '';
-    display: block;
-    height: 5px;
-    width: 100%;
-    border-radius: 5px;
-    background-color: white;
-    position: absolute;
-    left: 0;
-    z-index: 2;
-  }
 }
