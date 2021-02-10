@@ -903,6 +903,8 @@ h .history-box p {
 #posts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
   gap: 15px;
   margin: 15px;
   text-align: center;
@@ -972,6 +974,15 @@ footer a:hover {
   font-size: 18px;
   margin: auto;
   text-align: center;
+}
+
+.footer-content p {
+  margin-bottom: 5px;
+}
+
+.footer-content #phone {
+  display: inline-block;
+  padding-bottom: 2px;
 }
 
 footer #creator {
