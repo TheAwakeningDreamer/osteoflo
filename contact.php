@@ -100,7 +100,7 @@ if($_POST["message"]) {
               debitis similique harum laborum voluptates at veniam itaque autem.
             </p>
             <div id="contact-form">
-              <form action=”contact.php”
+              <form action="contact.php"
 
 
               method=”POST”
