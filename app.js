@@ -24,6 +24,9 @@ function resize() {
   } else {
     menu.style.display = 'block';
   }
+  if (screen.matches) {
+    navbar.style.display = 'block';
+  }
 }
 
 window.onresize = resize;
