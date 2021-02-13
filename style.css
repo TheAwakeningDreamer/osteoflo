@@ -81,12 +81,12 @@ button:focus {
   z-index: 1;
 }
 
-#nav-bar {
-  background: var(--light-blue);
+#menu {
+  display: none;
 }
 
-#nav-bar #menu {
-  display: none;
+#nav-bar {
+  background: var(--light-blue);
 }
 
 #nav-bar ul {
@@ -135,13 +135,14 @@ button:focus {
 }
 
 .container header #flo {
+  padding-top: 10px;
   display: grid;
   grid-template-columns: 0.7fr 1fr;
   margin-bottom: 30px;
   text-align: center;
 }
 
-.container header #flo #description-contact {
+.container header #flo #description {
   margin: 0 auto;
   padding: 20px;
 }
@@ -192,6 +193,7 @@ button:focus {
 }
 
 .container header #flo img {
+  align-self: center;
   border-radius: 15px;
   box-shadow: rgba(143, 143, 143, 0.7) 5px 5px 5px;
 }
@@ -239,6 +241,7 @@ button:focus {
 }
 
 .container header #intro img {
+  width: 30%;
   border-radius: 5px;
   transition: opacity 250ms linear;
 }
@@ -799,7 +802,11 @@ h .history-box p {
 /* CONTACT PAGE*/
 
 #google-map {
-  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 #google-map iframe {
@@ -809,7 +816,14 @@ h .history-box p {
 
 #contact-flo {
   display: grid;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: 1fr 1fr;
+}
+
+#contact-flo #rendez-vous {
+  margin: 20px auto;
 }
 
 #contact-flo h1 {
