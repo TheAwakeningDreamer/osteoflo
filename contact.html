@@ -1,8 +1,4 @@
-<?php
-if($_POST["message"]) {
-    mail("g.dupont528@gmail.com", "Form to email message", $_POST["message"], "From: an@email.address");
-}
-?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -100,13 +96,14 @@ if($_POST["message"]) {
               debitis similique harum laborum voluptates at veniam itaque autem.
             </p>
             <div id="contact-form">
-              <form action="contact.php"
+              <form 
+              action="mailto:contact@yourdomain.com"
 
 
-              method=”POST”
+              method="POST"
               
               
-              enctype=”multipart/form-data”
+              enctype="multipart/form-data"
               
               
               name=”EmailForm”>
