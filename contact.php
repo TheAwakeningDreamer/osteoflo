@@ -1,3 +1,8 @@
+<?php
+if($_POST["message"]) {
+    mail("g.dupont528@gmail.com", "Form to email message", $_POST["message"], "From: an@email.address");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -95,7 +100,7 @@
               debitis similique harum laborum voluptates at veniam itaque autem.
             </p>
             <div id="contact-form">
-              <form action=”mailto:g.dupont528@gmail.com”
+              <form action=”contact.php”
 
 
               method=”POST”
